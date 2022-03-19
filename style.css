@@ -1,8 +1,13 @@
-.hero {
-  background: url("img/hero.jpg") no-repeat center, #023047;
-  background-size: cover;
-  background-blend-mode: overlay;
+:root {
+  --section-title-underline-size-primary: 80%;
+  --section-title-underline-size-secondary: calc(
+    var(--section-title-underline-size-primary) / 2
+  );
+  --section-background: #fff;
+
 }
+
+/* styles for navbar and nav elements */
 .navbar-brand {
   color: #b9fbc0 !important;
 }
@@ -12,6 +17,12 @@
   text-align: right;
 }
 
+/* styles for hero section */
+.hero {
+  background: url("img/hero.jpg") no-repeat center, #023047;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
 .hero .h6 {
   color: #fdffb6;
 }
@@ -20,18 +31,7 @@
   font-size: 200%;
 }
 
-/* #resume-button{
-    --button-color: #f1c0e8;
-    border: none;
-    background-color: transparent;
-    color: var(--button-color);
-    border: 4px solid var(--button-color);
-    padding: 0.5rem 1.5rem;
-    font-size: 130%;
-    font-weight: bold;
-    letter-spacing: 1px;
-
-} */
+/* styles for resume button */
 #resume-button {
   --button-color: #ff5c8a;
   border: none;
@@ -55,9 +55,86 @@
   transform: scale(1.1);
 }
 
+/* styling for section */
+section#technology-stack {
+  background-color: var(--section-background);
+}
 
-@media (max-width: 768px){
-    #resume-button{
-        font-size: 100%;
-    }
+/* styling the section title */
+[section-title] {
+  position: relative;
+  font-weight: 600;
+  color: #ff4d6d;
+  text-shadow: 0px 0px 2px #ccff33;
+  padding-bottom: 10px;
+}
+
+[section-title]::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  left: calc(calc(100% - var(--section-title-underline-size-primary)) / 2);
+  width: var(--section-title-underline-size-primary);
+  height: 1px;
+  background-color: #fe6d73;
+}
+
+[section-title]::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  bottom: -1px;
+  left: calc(calc(100% - var(--section-title-underline-size-secondary)) / 2);
+  width: var(--section-title-underline-size-secondary);
+  height: 3px;
+  background-color: #a0c4ff;
+  z-index: 100;
+}
+
+/* style for tech stack cards  */
+#technology-stack .col{
+    max-width: min-content;
+    
+}   
+#technology-stack .stack-item {
+  margin-bottom: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+}
+
+#technology-stack [tech-img] {
+  width: 100px;
+  filter: drop-shadow(-5px 5px 3px rgba(54, 52, 52, 0.596));
+}
+
+#technology-stack hr{
+    color: #ef233c;
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+}
+
+#technology-stack [tech-name] {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #1a1b1a;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+
+/* media query */
+@media (max-width: 768px) {
+  #resume-button {
+    font-size: 100%;
+  }
+
+  #technology-stack [tech-img] {
+    width: 80px;
+  }
 }
