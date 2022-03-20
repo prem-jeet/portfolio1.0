@@ -4,7 +4,6 @@
     var(--section-title-underline-size-primary) / 2
   );
   --section-background: #fff;
-
 }
 
 /* styles for navbar and nav elements */
@@ -19,9 +18,11 @@
 
 /* styles for hero section */
 .hero {
-  background: url("img/hero.jpg") no-repeat center, #023047;
+  background: url("img/hero.jpg") no-repeat center, radial-gradient(#444, #333);
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  background-position: 50% 100%;
   background-size: cover;
-  background-blend-mode: overlay;
 }
 .hero .h6 {
   color: #fdffb6;
@@ -42,11 +43,14 @@
   font-size: 130%;
   font-weight: bold;
   letter-spacing: 1px;
+  transition: all 250ms linear;
 }
 
 #resume-button:hover,
 #resume-button:focus {
   --button-color-hover: #fdffb6;
+
+  
 
   color: var(--button-color-hover);
   border-color: var(--button-color-hover);
@@ -93,10 +97,9 @@ section#technology-stack {
 }
 
 /* style for tech stack cards  */
-#technology-stack .col{
-    max-width: min-content;
-    
-}   
+#technology-stack .col {
+  max-width: min-content;
+}
 #technology-stack .stack-item {
   margin-bottom: 20px;
   height: 100%;
@@ -112,11 +115,11 @@ section#technology-stack {
   filter: drop-shadow(-5px 5px 3px rgba(54, 52, 52, 0.596));
 }
 
-#technology-stack hr{
-    color: #ef233c;
-    width: 100%;
-    height: 3px;
-    border-radius: 10px;
+#technology-stack hr {
+  color: #ef233c;
+  width: 100%;
+  height: 3px;
+  border-radius: 10px;
 }
 
 #technology-stack [tech-name] {
@@ -126,7 +129,6 @@ section#technology-stack {
   font-size: 18px;
   line-height: 20px;
 }
-
 
 /* media query */
 @media (max-width: 768px) {
