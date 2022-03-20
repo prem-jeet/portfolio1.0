@@ -1,9 +1,12 @@
 :root {
-  --section-title-underline-size-primary: 80%;
+  --section-title-underline-size-primary:50%;
   --section-title-underline-size-secondary: calc(
     var(--section-title-underline-size-primary) / 2
   );
-  --section-background: #fff;
+  --section-background: #fff1e6;
+}
+.spacing>* + *{
+  margin-top: 1em;
 }
 
 /* styles for navbar and nav elements */
@@ -60,7 +63,8 @@
 }
 
 /* styling for section */
-section#technology-stack {
+section{
+
   background-color: var(--section-background);
 }
 
@@ -71,6 +75,8 @@ section#technology-stack {
   color: #ff4d6d;
   text-shadow: 0px 0px 2px #ccff33;
   padding-bottom: 10px;
+  text-transform: capitalize;
+  padding-top: 2rem;
 }
 
 [section-title]::after {
@@ -95,6 +101,8 @@ section#technology-stack {
   background-color: #a0c4ff;
   z-index: 100;
 }
+
+
 
 /* style for tech stack cards  */
 #technology-stack .col {
@@ -130,6 +138,27 @@ section#technology-stack {
   line-height: 20px;
 }
 
+
+/* style for ontact area */
+.contact__left > *{
+  border-bottom: 2px solid #d00000;
+  padding-bottom: 20px;
+  /* outline: 1px solid lime; */
+}
+
+
+.contact__left span{
+  text-transform: uppercase;
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+label{
+  text-transform: capitalize;
+}
+
+
+
 /* media query */
 @media (max-width: 768px) {
   #resume-button {
@@ -140,3 +169,5 @@ section#technology-stack {
     width: 80px;
   }
 }
+
+
