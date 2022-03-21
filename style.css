@@ -140,19 +140,23 @@ section{
 
 
 /* style for ontact area */
-.contact__left > *{
+#contact__details > *{
   border-bottom: 2px solid #d00000;
   padding-bottom: 20px;
   /* outline: 1px solid lime; */
 }
 
 
-.contact__left span{
+#contact__details span{
   text-transform: uppercase;
   margin-right: 10px;
   font-weight: 600;
 }
 
+#contact__form textarea{
+  width: 100%;
+  resize: none;
+}
 label{
   text-transform: capitalize;
 }

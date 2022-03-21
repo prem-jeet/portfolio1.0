@@ -112,56 +112,87 @@
       <div class="container">
         <h2 class="text-center mb-5" section-title>contact</h2>
         <div class="row">
-          <div class="col-md-6 d-none d-md-block spacing bg-dark text-light p-3 contact__right">
-            <div>
-              <label for="fullname" class="form-label">name:</label>
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Full name"
-                id="fullname"
-              />
-            </div>
-            <div>
-              <label for="email" class="form-label">email:</label>
-              <input
-                type="email"
-                class="form-control"
-                placeholder="Email"
-                id="email"
-              />
-            </div>
-            <div class="form-check">
-              <label for="phone_option" class="form-check-label"
-                >Can i call you?</label
-              >
-              <input
-                type="checkbox"
-                class="form-check-input"
-                id="phone_option"
-              />
-            </div>
-            <div>
-              <label for="phone" class="form-label">contact no.:</label>
-              <input
-                type="tel"
-                class="form-control"
-                placeholder="Phone"
-                id="phone"
-              />
-            </div>
-            <div>
-              <textarea name="message" id="message" cols="auto" rows="4" placeholder="Got a message for me?"></textarea>
-            </div>
-            <button class="btn btn-success">Submit</button>
+          <div
+            class="order-2 mt-5 order-md-0 mt-md-0 col-md-6 col-xl-4 offset-xl-2 bg-dark text-light p-3"
+          >
+            <form
+              class="spacing"
+              id="contact__form"
+              onsubmit="reset(); alert(`successful`)"
+            >
+              <div>
+                <label for="full_name" class="form-label">name:</label>
+                <input
+                  required
+                  type="text"
+                  class="form-control"
+                  placeholder="Full name"
+                  id="full_name"
+                  name="full_name"
+                />
+              </div>
+              <div>
+                <label for="email" class="form-label">email:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Email"
+                  id="email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="form-check">
+                <label for="call_option" class="form-check-label"
+                  >Can i call you?</label
+                >
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="call_option"
+                  name="call_option"
+                  onchange="checked_status(this)"
+                />
+              </div>
+              <div class="d-none" id="mobile_container">
+                <label for="mobile" class="form-label">contact no.:</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  placeholder="Mobile"
+                  id="mobile"
+                />
+              </div>
+              <div>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="4"
+                  placeholder="Got a message for me?"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-success" id="submit">
+                Submit
+              </button>
+            </form>
           </div>
-          <div class="col-12 col-md-6">
-            <div class="spacing d-flex flex-column justify-content-center h-100 p-md-5 contact__left">
-              <div><span>tel:</span>8637337272</div>
+
+          <div class="col-12 col-md-6 col-xl-4">
+            <div
+              class="spacing d-flex flex-column justify-content-center h-100 p-lg-5"
+              id="contact__details"
+            >
+              <div>
+                <span class="fa fa-phone"></span><span>tel:</span>8637337272
+              </div>
               <div><span>email:</span>jeet4300795@gmail.com</div>
               <div>
-                <a href="" class="link-dark"><i class="fa-2x fa-brands fa-github"></i></a>
-                <a href="" class="link-primary ms-3"><i class="fa-2x fa-brands fa-linkedin"></i></a>
+                <a href="" class="link-dark"
+                  ><i class="fa-2x fa-brands fa-github"></i
+                ></a>
+                <a href="" class="link-primary ms-3"
+                  ><i class="fa-2x fa-brands fa-linkedin"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -177,6 +208,6 @@
       crossorigin="anonymous"
     ></script>
     <!-- custom js file -->
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
