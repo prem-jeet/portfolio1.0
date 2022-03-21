@@ -118,8 +118,11 @@
             <form
               class="spacing"
               id="contact__form"
-              onsubmit="reset(); alert(`&#128578;&#128512;&#128513;\nThank you for sending me a message`)"
+              action="https://formsubmit.co/ff3abfbcbda713217f8a4220f579fdb9"
+              method="POST"
             >
+            <input type="hidden" name="_next" value="http://localhost:3000/">
+            <input type="hidden" name="_subject" value="Some viewed your portfolio">
               <div>
                 <label for="full_name" class="form-label">name:</label>
                 <input
@@ -161,6 +164,7 @@
                   class="form-control"
                   placeholder="Mobile"
                   id="mobile"
+                  name="mobile_number"
                 />
               </div>
               <div>
@@ -207,6 +211,8 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <!-- helps sending emails -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!-- custom js file -->
     <script src="./index.js"></script>
   </body>

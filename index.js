@@ -5,5 +5,9 @@ function checked_status(e) {
   // make the input for mobile number visible
   // make hide the input for  mobile number
   mobile_container.classList.toggle("d-none", !checked);
-  mobile_container.querySelector("#mobile").toggleAttribute("required", checked)
+  mobile_container
+    .querySelector("#mobile")
+    .toggleAttribute("required", checked);
 }
+
+
