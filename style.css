@@ -1,11 +1,11 @@
 :root {
-  --section-title-underline-size-primary:50%;
+  --section-title-underline-size-primary: 50%;
   --section-title-underline-size-secondary: calc(
     var(--section-title-underline-size-primary) / 2
   );
   --section-background: #fff1e6;
 }
-.spacing>* + *{
+.spacing > * + * {
   margin-top: 1em;
 }
 
@@ -53,8 +53,6 @@
 #resume-button:focus {
   --button-color-hover: #fdffb6;
 
-  
-
   color: var(--button-color-hover);
   border-color: var(--button-color-hover);
   filter: drop-shadow(0px 0px 10px #adff02);
@@ -63,8 +61,7 @@
 }
 
 /* styling for section */
-section{
-
+section {
   background-color: var(--section-background);
 }
 
@@ -102,8 +99,6 @@ section{
   z-index: 100;
 }
 
-
-
 /* style for tech stack cards  */
 #technology-stack .col {
   max-width: min-content;
@@ -138,32 +133,65 @@ section{
   line-height: 20px;
 }
 
-
 /* style for ontact area */
-#contact__details > *{
-  border-bottom: 2px solid #d00000;
-  padding-bottom: 20px;
-  /* outline: 1px solid lime; */
+#contact {
+  background-color: #fafafa;
 }
 
+#contact__form {
+  box-shadow: 0px 0px 10px 5px #e5e7ee, inset 0px 0px 10px 5px #eeeff0;
+}
 
-#contact__details span{
+#contact__form .form_title {
+  letter-spacing: 2px;
+  --font-size: calc(2vw + 1rem);
+  font-size: var(--font-size);
+  font-weight: 600;
+  color: #f59d87;
+}
+
+#contact__form textarea {
+  width: 100%;
+  resize: none;
+  padding: 10px;
+}
+
+#contact__form label {
+  text-transform: capitalize;
+  color: #81b29a;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+#contact__form input{
+  color: #79165b;
+}
+
+#contact__details > *:not(:nth-last-child(1)) {
+  padding-bottom: 15px;
+  border-bottom: 3px solid #e2e1e1;;
+}
+
+#contact__details span:first-child{
+  font-size: 20px;
+}
+#contact__details span:not(:nth-last-child(1)) {
   text-transform: uppercase;
   margin-right: 10px;
   font-weight: 600;
+  color: #ffb4a2;
+  display: inline-block;
+}
+#contact__details span:nth-last-child(1) {
+  --font-size: calc(1vw + 1rem);
+  font-size: var(--font-size);
+  color: #ef233c;
 }
 
-#contact__form textarea{
-  width: 100%;
-  resize: none;
+#contact__details i{
+  --font-size: calc(2vw + 2rem);
+  font-size: var(--font-size);
 }
-label{
-  text-transform: capitalize;
-}
-
-
-
-
 
 /* media query */
 @media (max-width: 768px) {
@@ -175,5 +203,3 @@ label{
     width: 80px;
   }
 }
-
-
