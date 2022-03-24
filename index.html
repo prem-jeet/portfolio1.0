@@ -108,15 +108,15 @@
     </section>
     <!-- featured project section -->
     <section id="featured">
-      <div class="container pb-4">
+      <div class="container-fluid pb-4">
         <h2 class="text-center mb-5" section-title>featured projects</h2>
-        <div id="featured_project_carousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
+        <div id="featured_project_carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
+          <div class="carousel-indicators m-0">
             <button type="button" data-bs-target="#featured_project_carousel" data-bs-slide-to="0" class="active" ></button>
             <button type="button" data-bs-target="#featured_project_carousel" data-bs-slide-to="1" ></button>
           </div>
-          <div class="carousel-inner ps-lg-3 rounded-3">
-            <i class="fa fa-play" play-pause-button></i>
+          <div class="carousel-inner ps-lg-3">
+            <i class="fa fa-play" play-pause-button data-state="play"></i>
             <div class="carousel-item active">
               <div class="w-100 h-100 d-flex flex-column flex-lg-row gap-4">
                 <div class="video_container">
@@ -143,9 +143,9 @@
                 <div class="video_container">
                   <video src="img/animated_sidebar_menu.mp4" autoplay muted loop></video>
                 </div>
-                <div class="project_description text-center align-self-center">
+                <div class="project_description text-center  text-lg-start align-self-center">
                   <h2>Animated sidebar menu</h2>
-                  <p>A light weight bootstrap manual</p>
+                  <p>Hidden sidebar navigation menu</p>
                   <div>
                     <a href="" class="carousel__button">
                       Live
@@ -160,11 +160,11 @@
               </div>
             </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#featured_project_carousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="carousel-control-prev-icon mt-5" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#featured_project_carousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <button class="carousel-control-next justify-content-lg-end" type="button" data-bs-target="#featured_project_carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon mt-5" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
@@ -303,5 +303,8 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!-- custom js file -->
     <script src="./index.js"></script>
+    <script>
+
+    </script>
   </body>
 </html>
