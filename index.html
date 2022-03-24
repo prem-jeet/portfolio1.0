@@ -35,7 +35,7 @@
         </button>
         <div class="collapse navbar-collapse" id="nav-menu">
           <div class="navbar-nav ms-auto">
-            <a href="#featured-project" class="nav-link me-lg-4">
+            <a href="#featured" class="nav-link mt-2 mt-lg-0 me-lg-4">
               Featured Project
             </a>
             <a href="#contact" class="nav-link">Contact</a>
@@ -107,13 +107,78 @@
       </div>
     </section>
     <!-- featured project section -->
+    <section id="featured">
+      <div class="container-fluid pb-4">
+        <h2 class="text-center mb-5" section-title>featured projects</h2>
+        <div id="featured_project_carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
+          <div class="carousel-indicators m-0">
+            <button type="button" data-bs-target="#featured_project_carousel" data-bs-slide-to="0" class="active" ></button>
+            <button type="button" data-bs-target="#featured_project_carousel" data-bs-slide-to="1" ></button>
+          </div>
+          <div class="carousel-inner ps-lg-3">
+            <i class="fa fa-play" play-pause-button data-state="play"></i>
+            <div class="carousel-item active">
+              <div class="w-100 h-100 d-flex flex-column flex-lg-row gap-4">
+                <div class="video_container">
+                  <video src="img/bootstrap_manual.mp4" autoplay muted loop></video>
+                </div>
+                <div class="project_description text-center text-lg-start align-self-center">
+                  <h2>Bootstrap Manual</h2>
+                  <p>A light weight bootstrap manual</p>
+                  <div>
+                    <a href="" class="carousel__button">
+                      Live
+                      <i class="ms-2 fa fa-angles-right"></i>
+                    </a>
+                    <a href="" class="carousel__button">
+                      Github
+                      <i class="ms-2 fa fa-code"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="w-100 h-100 d-flex flex-column flex-lg-row gap-4">
+                <div class="video_container">
+                  <video src="img/animated_sidebar_menu.mp4" autoplay muted loop></video>
+                </div>
+                <div class="project_description text-center  text-lg-start align-self-center">
+                  <h2>Animated sidebar menu</h2>
+                  <p>Hidden sidebar navigation menu</p>
+                  <div>
+                    <a href="" class="carousel__button">
+                      Live
+                      <i class="ms-2 fa fa-angles-right"></i>
+                    </a>
+                    <a href="" class="carousel__button">
+                      Github
+                      <i class="ms-2 fa fa-code"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#featured_project_carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon mt-5" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next justify-content-lg-end" type="button" data-bs-target="#featured_project_carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon mt-5" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        
+      </div>
+    </section>
+
     <!-- contact section -->
     <section id="contact" class="p-4 pt-0">
       <div class="container">
         <h2 class="text-center mb-5" section-title>contact</h2>
         <div class="row">
           <div
-            class="rounded-3  order-2 order-lg-0 col-lg-6 col-xl-5 offset-xl-1 mt-3 mt-md-0"
+            class="rounded-3 order-2 order-lg-0 col-lg-6 col-xl-5 offset-xl-1 mt-3 mt-md-0"
           >
             <form
               class="spacing p-4"
@@ -121,9 +186,17 @@
               action="https://formsubmit.co/ff3abfbcbda713217f8a4220f579fdb9"
               method="POST"
             >
-            <h3 class="text-center form_title">Contact form</h3>
-            <input type="hidden" name="_next" value="http://localhost:3000/">
-            <input type="hidden" name="_subject" value="Some viewed your portfolio">
+              <h3 class="text-center form_title">Contact form</h3>
+              <input
+                type="hidden"
+                name="_next"
+                value="http://localhost:3000/"
+              />
+              <input
+                type="hidden"
+                name="_subject"
+                value="Some viewed your portfolio"
+              />
               <div>
                 <label for="full_name" class="form-label">name:</label>
                 <input
@@ -188,17 +261,28 @@
               id="contact__details"
             >
               <div>
-                <span class="fa fa-phone"></span><span>tel:</span>
-                <br><span class="mt-3" >8637337272</span>
+                <span class="fa fa-phone"></span><span>tel:</span> <br /><span
+                  class="mt-3"
+                  >8637337272</span
+                >
               </div>
               <div>
                 <span class="fa fa-envelope"></span><span>email:</span>
-                <br><span class="mt-3">jeet4300795@gmail.com</span></div>
+                <br /><span class="mt-3">jeet4300795@gmail.com</span>
+              </div>
               <div>
-                <a target="_blank" href="https://github.com/prem-jeet" class="link-dark" title="github"
+                <a
+                  target="_blank"
+                  href="https://github.com/prem-jeet"
+                  class="link-dark"
+                  title="github"
                   ><i class="fa-brands fa-github"></i
                 ></a>
-                <a target="_blank" href="https://www.linkedin.com/in/premjeet-prasad-256604133/" class="link-primary ms-3" title="linkedin"
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/premjeet-prasad-256604133/"
+                  class="link-primary ms-3"
+                  title="linkedin"
                   ><i class="fa-brands fa-linkedin"></i
                 ></a>
               </div>
@@ -219,5 +303,8 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!-- custom js file -->
     <script src="./index.js"></script>
+    <script>
+
+    </script>
   </body>
 </html>
