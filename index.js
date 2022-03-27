@@ -20,8 +20,9 @@ play_pause_button.addEventListener("click", (e) => {
   }
 });
 
-function checked_status(e) {
-  let checked = e.checked;
+const call_check_box = document.querySelector("#call_option");
+call_check_box.addEventListener("change", () => {
+  let checked = call_check_box.checked;
   const mobile_container = document.querySelector("#mobile_container");
 
   // make the input for mobile number visible
@@ -30,7 +31,7 @@ function checked_status(e) {
   mobile_container
     .querySelector("#mobile")
     .toggleAttribute("required", checked);
-}
+});
 
 // * swiper js config
 var swiper = new Swiper(".swiper-container", {
@@ -71,8 +72,8 @@ function makeCard(data) {
 
   project_img.style.backgroundImage = `url(${data.img})`;
   project_title.textContent = data.name;
-  github_button.setAttribute("href", data.github)
-  live_button.setAttribute("href", data.live)
+  github_button.setAttribute("href", data.github);
+  live_button.setAttribute("href", data.live);
   project_description.innerHTML = data.description;
   for (tag of data.tags) {
     let span = document.createElement("span");
