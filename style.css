@@ -383,12 +383,17 @@ animation: all_project_bg_anime 30s ease-in-out infinite;
 	display: flex;
 	flex-direction: column;
 	box-shadow: 5px 4px 10px -3px #000;
+  margin-bottom: 30px;
+  font-size: 18px;
 }
 
 
 .project__img{
 	height: 40vh;
 	background-color: #e5e5e53f;
+  background-position: center;
+  background-size: cover;
+  
 }
 
 .project__text{
@@ -404,9 +409,37 @@ animation: all_project_bg_anime 30s ease-in-out infinite;
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-decoration: underline;
+  text-transform: capitalize;
+  font-size: 100%;
 }
-.project__text p{
-	font-size: 90%;
+
+.project__card__buttons > * + *{
+  margin-inline-start: 10px;
+}
+
+.project__button{
+  text-decoration: none;
+  letter-spacing: 2px;
+  border: 2px solid black;
+  padding: 0.25em 1em;
+  background-color: rgba(255, 255, 255, 0.479);
+  text-transform: capitalize;
+  display: inline-block;
+  line-height: 1.2;
+  color: #000;
+  font-size: 70%;
+}
+
+.project__description{
+	font-size: 80%;
+
+}
+.project__description a{
+  text-decoration: none;
+}
+
+.project__description i {
+  color: red;
 }
 
 .project__tags{
@@ -416,15 +449,15 @@ animation: all_project_bg_anime 30s ease-in-out infinite;
 
 .project__tags span{
 	display: inline-block;
-	padding: 0.25em 1em;
+	padding: 0.15em 0.75em;
 	background-color: #e9f5db;
-	text-transform: uppercase;
-	border:1px solid #1e6091;
+	text-transform: capitalize;
 	color: #1e6091;
 	font-weight: 600;
 	letter-spacing: 1px;
 	transform-origin: center left;
 	transform: scale(0.8);
+  font-size: 70%;
 }
 
 

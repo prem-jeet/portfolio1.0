@@ -116,7 +116,7 @@
     <section id="featured">
       <div class="container-fluid pb-4">
         <h2 class="text-center mb-5" section-title>featured projects</h2>
-        <div id="featured_project_carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
+        <div id="featured_project_carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="false">
           <div class="carousel-indicators m-0">
             <button type="button" data-bs-target="#featured_project_carousel" data-bs-slide-to="0" class="active" ></button>
             <button type="button" data-bs-target="#featured_project_carousel" data-bs-slide-to="1" ></button>
@@ -178,87 +178,12 @@
       </div>
     </section>
 
-        <!-- TODO : slider type display for all the projects -->
+      <!-- all projects section -->
         <section id="all_projects">
           <div class="container-fluid">
             <h2 class="text-center mb-5" section-title>all projects</h2>
             <div class="swiper-container">
               <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="project__card">
-            <div class="project__img"></div>
-            <div class="project__text">
-              <h2 class="project__title">Project Title</h2>
-              <p class="project__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, corporis!
-              </p>
-              <div class="project__tags">
-                <span>html</span><span>css</span>
-                <span>html</span><span>css</span>
-              </div>
-            </div>
-          </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="project__card">
-            <div class="project__img"></div>
-            <div class="project__text">
-              <h2 class="project__title">Project Title</h2>
-              <p class="project__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, corporis!
-              </p>
-              <div class="project__tags">
-                <span>html</span><span>css</span>
-                <span>html</span><span>css</span>
-              </div>
-            </div>
-          </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="project__card">
-            <div class="project__img"></div>
-            <div class="project__text">
-              <h2 class="project__title">Project Title</h2>
-              <p class="project__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, corporis!
-              </p>
-              <div class="project__tags">
-                <span>html</span><span>css</span>
-                <span>html</span><span>css</span>
-              </div>
-            </div>
-          </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="project__card">
-            <div class="project__img"></div>
-            <div class="project__text">
-              <h2 class="project__title">Project Title</h2>
-              <p class="project__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, corporis!
-              </p>
-              <div class="project__tags">
-                <span>html</span><span>css</span>
-                <span>html</span><span>css</span>
-              </div>
-            </div>
-          </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="project__card">
-            <div class="project__img"></div>
-            <div class="project__text">
-              <h2 class="project__title">Project Title</h2>
-              <p class="project__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, corporis!
-              </p>
-              <div class="project__tags">
-                <span>html</span><span>css</span>
-                <span>html</span><span>css</span>
-              </div>
-            </div>
-          </div>
-                </div>
               </div>
             </div>
           </div>
@@ -385,6 +310,28 @@
     </section>
 
 
+    <!-- * template for project card -->
+    <template id="project_card_template">
+      <div class="swiper-slide">
+        <div class="project__card">
+            <div class="project__img"></div>
+            <div class="project__text">
+              <h2 class="project__title"></h2>
+              <div class="project__card__buttons">
+                <a href="" target="_blank" class="project__button" github>Github <i class="fa fa-code"></i></a>
+                <a href="" target="_blank" class="project__button" live>live <i class="fa fa-play-circle"></i></a>
+              </div>
+              <p class="project__description">
+                
+              </p>
+              <div class="project__tags">
+                
+              </div>
+            </div>
+         </div>
+      </div>
+    </template>
+
 
 
     <!-- 3rd party scripts -->
@@ -397,7 +344,7 @@
     <!-- ! required for the carousal in all project section -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!-- custom js file -->
-    <script src="./index.js"></script>
+    <script src="dist/main.js"></script>
     
   </body>
 </html>
