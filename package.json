@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run onchange:js",
+    "onchange:js": "onchange -i -d 5000 '*.js' '*.json' -- npm run browserify",
+    "browserify" : "browserify -d index.js -o dist/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prem-jeet/portfolio1.0.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prem-jeet/portfolio1.0/issues"
+  },
+  "homepage": "https://github.com/prem-jeet/portfolio1.0#readme",
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "onchange": "^7.1.0"
+  }
+}

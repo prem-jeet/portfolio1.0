@@ -330,6 +330,139 @@ background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
   transform: scale(1.075);
 }
 
+
+/* style for all project section */
+#all_projects {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+  
+  background: rgb(180,58,105);
+background: radial-gradient(circle, rgba(180,58,105,1) 4%, rgba(41,205,222,1) 11%, rgba(238,35,233,1) 18%, rgba(29,74,253,1) 25%, rgba(69,252,133,1) 34%, rgba(213,69,252,1) 42%, rgba(217,252,69,1) 51%, rgba(69,177,252,1) 59%, rgba(252,201,69,1) 71%, rgba(69,220,252,1) 78%, rgba(174,252,69,1) 84%, rgba(252,69,155,1) 91%, rgba(69,252,155,1) 96%);
+background-position: 50% 50%;
+background-size: 1000%;
+
+animation: all_project_bg_anime 30s ease-in-out infinite;
+}
+
+
+@keyframes all_project_bg_anime{
+0%{
+  background-size: 1000%;
+}
+25%{
+  background-size: 500%;
+}
+50%{
+  background-size: 100%;
+}
+75%{
+  background-size: 500%;
+}
+100%{
+  background-size: 1000%;
+}
+}
+.swiper-container {
+	width: 100%;
+
+}
+
+.swiper-slide {
+	background-position: center;
+	background-size: cover;
+	width: 50vh;
+}
+
+.project__card {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 5px 4px 10px -3px #000;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+
+.project__img{
+	height: 40vh;
+	background-color: #e5e5e53f;
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.project__text{
+	padding: 20px;
+  background-color: #fafaffa6;
+}
+
+.project__text > * + *{
+	margin-top: 20px;
+}
+
+.project__title{
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-decoration: underline;
+  text-transform: capitalize;
+  font-size: 100%;
+}
+
+.project__card__buttons > * + *{
+  margin-inline-start: 10px;
+}
+
+.project__button{
+  text-decoration: none;
+  letter-spacing: 2px;
+  border: 2px solid black;
+  padding: 0.25em 1em;
+  background-color: rgba(255, 255, 255, 0.479);
+  text-transform: capitalize;
+  display: inline-block;
+  line-height: 1.2;
+  color: #000;
+  font-size: 70%;
+}
+
+.project__description{
+	font-size: 80%;
+
+}
+.project__description a{
+  text-decoration: none;
+}
+
+.project__description i {
+  color: red;
+}
+
+.project__tags{
+	display: flex;
+	flex-wrap:wrap;
+}
+
+.project__tags span{
+	display: inline-block;
+	padding: 0.15em 0.75em;
+	background-color: #e9f5db;
+	text-transform: capitalize;
+	color: #1e6091;
+	font-weight: 600;
+	letter-spacing: 1px;
+	transform-origin: center left;
+	transform: scale(0.8);
+  font-size: 70%;
+}
+
+
+
+
 /* media query */
 @media (max-width: 768px) {
   #resume-button {

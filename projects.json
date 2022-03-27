@@ -1,0 +1,68 @@
+{
+  "project1": {
+    "img": "img/projects/project1.jpg",
+    "name": "Landing page",
+    "description": "Converted the design from <a target='_blank' href='https://www.uidesigndaily.com/posts/sketch-landing-page-website-day-1217'><i>UI Design Daily</i></a> to code",
+    "tags": ["html", "css", "flxbox", "non-responsive"],
+    "live": "https://prem-jeet.github.io/web-dev-practice/7_landing_page/",
+    "github": "https://github.com/prem-jeet/web-dev-practice/tree/gh-pages/7_landing_page"
+  },
+  "project2": {
+    "img": "img/projects/project2.jpg",
+    "name": "Sidebar navigation",
+    "description": "Recreated the sidebar menu from <a target='_blank' href='https://1337x.to/home/'><i>1337x Website</i></a>",
+    "tags": ["html", "css", "flexbox"],
+    "live": "https://prem-jeet.github.io/web-dev-practice/8_1337x-sidebar-layout/",
+    "github": "https://github.com/prem-jeet/web-dev-practice/tree/gh-pages/8_1337x-sidebar-layout"
+  },
+  "project3":{
+    "img": "img/projects/project3.jpg",
+    "name": "Event list",
+    "description": "Converted design to code taking inspiration from <a target='_blank' href='https://www.uidesigndaily.com/posts/sketch-events-list-day-1263'><i>UI Design Daily</i></a>",
+    "tags": ["html", "css", "flexbox", "not-responsive"],
+    "live": "https://prem-jeet.github.io/web-dev-practice/3_events_list/",
+    "github": "https://github.com/prem-jeet/web-dev-practice/tree/gh-pages/3_events_list"
+  },
+  "project4":{
+    "img": "img/projects/project4.jpg",
+    "name": "Event Grid",
+    "description": "Converted design to code taking inspiration from <a target='_blank' href='https://www.uidesigndaily.com/posts/sketch-events-list-day-1346'><i>UI Design Daily</i></a>",
+    "tags": ["html", "css", "flexbox", "responsive"],
+    "live": "https://prem-jeet.github.io/web-dev-practice/4_events_list_2/",
+    "github": "https://github.com/prem-jeet/web-dev-practice/blob/gh-pages/4_events_list_2/style.css"
+  },
+  "project5":{
+    "img": "img/projects/project5.jpg",
+    "name": "Stats Card",
+    "description": "Converted design to code taking inspiration from <a target='_blank' href='https://www.uidesigndaily.com/posts/sketch-stats-statistics-gradient-card-day-1301'><i>UI Design Daily</i></a>",
+    "tags": ["html", "css", "flexbox", "not-responsive"],
+    "live": "https://prem-jeet.github.io/web-dev-practice/6_stats_card/",
+    "github": "https://github.com/prem-jeet/web-dev-practice/tree/gh-pages/6_stats_card"
+  },
+  "project6":{
+    "img": "img/projects/project6.jpg",
+    "name": "Feedback Page",
+    "description": "Converted design to code taking inspiration from <a target='_blank' href='https://www.uidesigndaily.com/posts/figma-feedback-card-ui-design-day-1335'><i>UI Design Daily</i></a>",
+    "tags": ["html", "css", "flexbox", "responsive"],
+    "live": "https://prem-jeet.github.io/web-dev-practice/5_feedback_Card/",
+    "github": "https://github.com/prem-jeet/web-dev-practice/tree/gh-pages/5_feedback_Card"
+    
+  },
+  "project7":{
+    "img": "img/projects/project7.jpg",
+    "name": "Pricing Card",
+    "description": "Made this as a part of <a target='_blank' href='https://www.udemy.com/course/the-web-developer-bootcamp/1335'><i>Colt Steele: The Web Developer Bootcamp</i></a>",
+    "tags": ["html", "css", "flexbox", "responsive"],
+    "live": "https://prem-jeet.github.io/web-dev-practice/9_PriceTable(colt_steele_bootcamp)/",
+    "github": "https://github.com/prem-jeet/web-dev-practice/tree/gh-pages/9_PriceTable(colt_steele_bootcamp)"
+    
+  },
+  "project8":{
+    "img": "img/projects/project8.jpg",
+    "name": "3-Column Preview Card",
+    "description": "Converted design to code taking inspiration from <a target='_blank' href='https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-'><i>Frontend Mentor Challange</i></a>",
+    "tags": ["html", "css", "flexbox", "responsive"],
+    "live": "https://prem-jeet.github.io/web-dev-practice/11_3column_previw_card/",
+    "github": "https://github.com/prem-jeet/web-dev-practice/tree/gh-pages/11_3column_previw_card"
+  }
+}
