@@ -50,6 +50,11 @@
   transition: all 250ms linear;
 }
 
+#resume-button a{
+  color: inherit;
+  text-decoration: none;
+}
+
 #resume-button:hover,
 #resume-button:focus {
   --button-color-hover: #fdffb6;

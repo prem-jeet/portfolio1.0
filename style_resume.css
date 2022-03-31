@@ -1,0 +1,122 @@
+.spacing > * + * {
+  margin-top: 20px;
+}
+
+header {
+  background-color: #023047;
+}
+
+header .profile__img{
+    flex: 0 0 0 !important;
+}
+header .profile__desc{
+    flex: 1 0 0 !important;
+}
+[aside] {
+  background-color: #ffafcc50;
+}
+
+[details] h4,
+[achievement] h4,
+.education .h2,
+.work .h2 {
+  letter-spacing: 2px;
+  font-weight: 600;
+  text-decoration: underline;
+  color: #283618;
+}
+[contact-info], [achievement] p {
+  font-size: 0.8rem;
+}
+
+[contact-info] i, [achievement] i {
+  font-size: 130%;
+  margin-right: 10px;
+  color: #d00000;
+}
+
+.education__card {
+  padding: 15px;
+  border-left: 3px solid #000;
+  position: relative;
+  background-color: #ff006f07;
+}
+
+.education__card::before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  background-color: #1780a1;
+  left: -11px;
+  top: -11px;
+  border-radius: 50%;
+}
+
+.education__card .card__text {
+  font-size: 95%;
+  color: #e07a5f;
+}
+
+.education__duration {
+  color: #892b64;
+  font-weight: 600;
+}
+
+.education__grade {
+  color: #8338ec;
+}
+
+.work__card {
+  padding: 15px;
+  border-left: 3px solid #000;
+  position: relative;
+  background-color: #fff1e678;
+}
+
+.work__card::before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  background-color: #ff006e;
+  left: -11px;
+  top: -11px;
+  border-radius: 50%;
+}
+
+.work__duration {
+  color: #892b64;
+  font-weight: 600;
+}
+.work__company {
+  color: #3d405b;
+  font-size: 95%;
+}
+
+.work__detail {
+  font-size: 90%;
+  color: #bc6c25;
+}
+
+@media (min-width: 767px) {
+  body {
+    min-height: 100vh;
+    overflow-y: hidden;
+  }
+
+  /* [details] {
+    height: 100%;
+  } */
+
+  [main] {
+    height: 100vh;
+    overflow-y: scroll;
+  }
+}
+
+
+
+[test]{
+    display: flex;align-items: center;
+}
